@@ -18,7 +18,7 @@ export default function (router, options = {}) {
   let persist = storage => storage.setItem(key, JSON.stringify(routesQuque))
   // back , send you to the previous route
   router.backward = function (stepNum) {
-    if (stepNum !== 'number') stepNum = 1
+    if (typeof stepNum !== 'number') stepNum = 1
     stepNum = Math.abs(stepNum)
     let index = routesQuque.length - 1 - stepNum
     let route = routesQuque[0]
