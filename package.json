@@ -1,6 +1,6 @@
 {
   "name": "vue-router-backward",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "add backward function to vue-router，the function is difference from browser history",
   "main": "index.js",
   "scripts": {
