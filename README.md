@@ -8,12 +8,14 @@ add backward function to vue-router，the function is difference from browser hi
 
 > browser history：  
 >  A > B > C > B > D  
-> it`s record will change:  
+> the 'backward' module will record:  
 >  1: A  
 >  2: A > B  
 >  3: A > B > C  
 >  4: A > B  
 >  5: A > B > D
+
+&emsp;&emsp;Finally, when you use 'backward' back from page B, you will arrive at page A.
 
 ## install
 
