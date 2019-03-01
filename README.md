@@ -65,6 +65,9 @@ export default {
 ```
   if (this.$route.params.isBack) {
     this.transitionEffect = ''
+    if(this.$route.params.backFrom === 'AMap'){ // When you use 'backward', it brings in the name of the route
+      this.AMapComplete = true
+    }
   }else {
     this.transitionEffect = 'slideInRight'
   }
