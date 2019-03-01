@@ -27,7 +27,7 @@ export default function (router, options = {}) {
     this.push({
       name: route.name,
       // path: route.path,
-      params: { isBack: true },
+      params: { isBack: true, backFrom: this.currentRoute.name },
       query: route.query
     })
   }
